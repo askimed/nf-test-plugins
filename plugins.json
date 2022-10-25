@@ -1,10 +1,10 @@
 [{
-  "id": "nft-genomics",
+  "id": "nft-fasta",
   "latest": "1.0.0",
-  "url": "https://github.com/askimed/nft-genomics",
-  "description": "Provides support for bioinformatics file formats.",
+  "url": "https://github.com/askimed/nft-fasta",
+  "description": "Provides support for FASTA files.",
   "releases": [{
     "version": "1.0.0",
-    "url": "https://github.com/askimed/nft-genomics/releases/download/v1.0.0/nft-genomics-1.0.0.jar",
+    "url": "https://github.com/askimed/nft-fasta/releases/download/v1.0.0/nft-fasta-1.0.0.jar",
   }]
 }]
