@@ -1,0 +1,14 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<h1>nf-test plugins</h1>
+
+<ul>
+{% for plugin in site.data.plugins %}
+<li><a href="{{plugin.url}}">{{plugin.id}}</a> {{plugin.latest}}</li>
+{% endfor %}
+</ul>
