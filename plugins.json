@@ -1,8 +1,8 @@
 [{
-  "id": "nf-test-genomics",
+  "id": "nft-genomics",
   "latest": "1.0.0"
   "releases": [{
     "version": "1.0.0",
-    "url": "https://github.com/askimed/nf-test-genomics/releases/download/v1.0.0/nf-test-genomics-1.0.0.jar",
+    "url": "https://github.com/askimed/nft-genomics/releases/download/v1.0.0/nft-genomics-1.0.0.jar",
   }]
 }]
