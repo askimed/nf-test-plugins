@@ -19,7 +19,7 @@
 },{
   "id": "nft-bam",
   "latest": "0.1.0",
-  "url": "https://github.com/nvnieuwk/nft-bam"
+  "url": "https://github.com/nvnieuwk/nft-bam",
   "description": "Provides some helper functionality for handling SAM/BAM/CRAM files during tests",
   "releases": [{
     "version": "0.1.0",
