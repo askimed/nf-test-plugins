@@ -5,11 +5,72 @@
 layout: default
 ---
 
-<h1>nf-test plugins</h1>
 
-<ul>
-{% for plugin in site.data.plugins %}
-<li><a href="{{plugin.url}}">{{plugin.id}}</a> {{plugin.latest}}<br>
-<small>{{plugin.description}}</small></li>
-{% endfor %}
-</ul>
+
+<div class="container mt-5">
+
+    <h1 lass="mb-4">Plugins</h1>
+
+    <p>Explore nf-test plugins made by the community.</p>
+
+    <hr>
+
+    <div class="row">
+        {% for plugin in site.data.plugins %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body" style="height: 200px;">
+                    <h5 class="card-title"><a href="{{plugin.url}}">{{plugin.id}}</a> {{plugin.latest}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">by {{plugin.author}}</h6>
+                    <p>{{plugin.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <button data-plugin="{{plugin.id}}@{{plugin.latest}}"class="btn-install btn btn-secondary btn-sm">Install</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="pluginModal" tabindex="-1" role="dialog" aria-labelledby="pluginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="pluginModalLabel">Installation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>To activate the plugin please add it to your <code>nf-test.config</code> file:</p>
+            <textarea id="pluginInfo" class="control" style="width: 100%; height: 150px;"></textarea>
+
+        </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function() {
+      $('.btn-install').on('click', function() {
+        var plugin = $(this).data('plugin');
+        var content = "config {\n" +
+        "    plugins {\n" +
+        "        load \"" + plugin + "\"\n" +
+        "    }\n" +
+        "}"
+
+        $('#pluginInfo').text(content);
+        $('#pluginModal').modal('show');
+      });
+    });
+  </script>
+  
+
