@@ -2,28 +2,31 @@
   "id": "nft-fasta",
   "latest": "1.0.0",
   "url": "https://github.com/askimed/nft-fasta",
+  "github": "askimed/nft-fasta",
   "description": "Provides support for FASTA files.",
   "author": "Lukas Forer",
   "keywords": [],
   "releases": [{
     "version": "1.0.0",
-    "url": "https://github.com/askimed/nft-fasta/releases/download/v1.0.0/nft-fasta-1.0.0.jar",
+    "url": "https://github.com/askimed/nft-fasta/releases/download/v1.0.0/nft-fasta-1.0.0.jar"
   }]
 },{
   "id": "nft-vcf",
   "latest": "1.0.2",
   "url": "https://github.com/seppinho/nft-vcf",
+  "github": "seppinho/nft-vcf",
   "description": "Provides support for VCF files.",
   "author": "Sebastian Schönherr",
   "keywords": [],
   "releases": [{
     "version": "1.0.2",
-    "url": "https://github.com/seppinho/nft-vcf/releases/download/v1.0.2/nft-vcf-1.0.2-jar-with-dependencies.jar",
+    "url": "https://github.com/seppinho/nft-vcf/releases/download/v1.0.2/nft-vcf-1.0.2-jar-with-dependencies.jar"
   }]
 },{
   "id": "nft-bam",
   "latest": "0.1.1",
-  "url": "https://github.com/nvnieuwk/nft-bam",
+  "url": "https://nvnieuwk.github.io/nft-bam",
+  "github": "nvnieuwk/nft-bam",
   "description": "Provides some helper functionality for handling SAM/BAM/CRAM files during tests",
   "author": "Nicolas Vannieuwkerke",
   "keywords": [],
