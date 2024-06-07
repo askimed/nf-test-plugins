@@ -37,4 +37,16 @@
     "version": "0.1.1",
     "url": "https://github.com/nvnieuwk/nft-bam/releases/download/0.1.1/nft-bam-0.1.1.jar"
   }]
+},{
+  "id": "nft-compress",
+  "latest": "0.1.0",
+  "url": "https://github.com/lukfor/nft-compress",
+  "github": "lukfor/nft-compress",
+  "description": "Provides support for ZIP files.",
+  "author": "Lukas Forer",
+  "keywords": [],
+  "releases": [{
+    "version": "0.1.0",
+    "url": "https://github.com/lukfor/nft-compress/releases/download/0.1.0/nft-compress-0.1.0.jar"
+  }]
 }]
