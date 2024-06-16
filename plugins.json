@@ -52,4 +52,18 @@
     "version": "0.1.0",
     "url": "https://github.com/lukfor/nft-compress/releases/download/0.1.0/nft-compress-0.1.0.jar"
   }]
-}]
+},{
+  "id": "nft-csv",
+  "latest": "0.1.0",
+  "url": "https://github.com/lukfor/nft-csv",
+  "github": "lukfor/nft-csv",
+  "description": "Provides support for CSV files. (BETA Version!)",
+  "author": "Lukas Forer",
+  "keywords": [],
+  "releases": [{
+    "version": "0.1.0",
+    "url": "https://github.com/lukfor/nft-csv/releases/download/0.1.0/nft-csv-0.1.0.jar"
+  }]
+}
+
+]
