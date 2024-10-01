@@ -79,6 +79,17 @@
     "version": "0.1.0",
     "url": "https://github.com/lukfor/nft-csv/releases/download/0.1.0/nft-csv-0.1.0.jar"
   }]
-}
+},{
+  "id": "nft-utils",
+  "latest": "0.0.1",
+  "url": "https://github.com/nf-core/nft-utils",
+  "github": "nf-core/nft-utils",
+  "description": "nf-test utility functions for Nextflow pipelines.",
+  "author": "nf-core",
+  "keywords": [],
+  "releases": [{
+    "version": "0.0.1",
+    "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.1/nft-utils-0.0.1.jar"
+  }
 
 ]
