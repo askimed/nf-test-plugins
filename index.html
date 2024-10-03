@@ -6,27 +6,45 @@ layout: default
 ---
 
 <div class="hero-header">
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <h1 class="mb-4">Plugins</h1>
-        <p>Explore nf-test plugins made by the community.</p>
+        <p style="font-size: 120%">Explore nf-test plugins made by the community.</p>
+        <p class="mt-4">
+            <a href="https://www.nf-test.com/docs/plugins/using-plugins/" class="btn btn-light">
+                <i class="fas fa-book"></i> Documentation
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/askimed/nf-test/discussions/categories/plugin-development" class="btn btn-light">
+                <i class="fas fa-comments"></i> Discussions
+            </a>          
+        </p>
     </div>
 </div>
 
 
 <div class="container mt-5">
 
-    <div class="row">
+    <div class="mb-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search by title, author, or description...">
+    </div>
+
+    <div class="row" id="pluginContainer">
         {% for plugin in site.data.plugins %}
         <div class="col-md-4 mb-4">
             <div class="card">
                 <div class="card-body" style="height: 200px;">
+                    <p>
+                        {% for keyword in plugin.keywords %}
+                            <span class="badge badge badge-secondary">{{ keyword }}</span>
+                        {% endfor %}                        
+                    </p>                    
                     <h5 class="card-title"><a href="{{plugin.url}}" target = "_blank">{{plugin.id}}</a> {{plugin.latest}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">by {{plugin.author}}</h6>
-                    <p>{{plugin.description}}</p>
+                    <p class="plugin-description">{{plugin.description}}</p>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
                     <button data-plugin="{{plugin.id}}@{{plugin.latest}}"class="btn-install btn btn-secondary btn-sm">
-                        Install
+                        <i class="fas fa-download"></i> Install
                     </button>
                     <a href="https://github.com/{{plugin.github}}" target="_blank">
                         <img src = "https://img.shields.io/github/downloads/{{plugin.github}}/total?labelColor=%23ffffff" class="float-right">
@@ -64,17 +82,36 @@ layout: default
 
 <script>
     $(document).ready(function() {
-      $('.btn-install').on('click', function() {
-        var plugin = $(this).data('plugin');
-        var content = "config {\n" +
-        "    plugins {\n" +
-        "        load \"" + plugin + "\"\n" +
-        "    }\n" +
-        "}"
 
-        $('#pluginInfo').text(content);
-        $('#pluginModal').modal('show');
-      });
+        $('.btn-install').on('click', function() {
+            var plugin = $(this).data('plugin');
+            var content = "config {\n" +
+            "    plugins {\n" +
+            "        load \"" + plugin + "\"\n" +
+            "    }\n" +
+            "}"
+
+            $('#pluginInfo').text(content);
+            $('#pluginModal').modal('show');
+        });
+
+        $('#searchInput').on('keyup', function() {
+            let filterValue = $(this).val().toLowerCase();
+            
+            $('.card').each(function() {
+                let title = $(this).find('.card-title').text().toLowerCase();
+                let author = $(this).find('.card-subtitle').text().toLowerCase();
+                let description = $(this).find('.plugin-description').text().toLowerCase();
+
+                // Check if the search query matches title, author, or description
+                if (title.includes(filterValue) || author.includes(filterValue) || description.includes(filterValue)) {
+                    $(this).closest('.col-md-4').show();  // Show the card
+                } else {
+                    $(this).closest('.col-md-4').hide();  // Hide the card
+                }
+            });
+        });
+      
     });
   </script>
   
