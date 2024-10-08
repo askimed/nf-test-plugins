@@ -96,6 +96,9 @@
   },{
     "version": "0.0.2",
     "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.2/nft-utils-0.0.2.jar"
+  },{
+    "version": "0.0.3",
+    "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.3/nft-utils-0.0.3.jar"
   }]
 }
 ]
