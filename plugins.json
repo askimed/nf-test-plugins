@@ -75,7 +75,7 @@
   "latest": "0.1.0",
   "url": "https://github.com/lukfor/nft-csv",
   "github": "lukfor/nft-csv",
-  "description": "Provides support for CSV files. (BETA Version!)",
+  "description": "Provides support for CSV files.",
   "author": "Lukas Forer",
   "keywords": [],
   "releases": [{
