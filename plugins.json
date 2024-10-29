@@ -57,6 +57,9 @@
   },{
     "version": "0.4.0",
     "url": "https://github.com/nvnieuwk/nft-bam/releases/download/0.4.0/nft-bam-0.4.0.jar"
+  },{
+    "version": "0.5.0",
+    "url": "https://github.com/nvnieuwk/nft-bam/releases/download/0.5.0/nft-bam-0.5.0.jar"
   }]
 },{
   "id": "nft-compress",
