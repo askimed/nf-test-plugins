@@ -103,5 +103,17 @@
     "version": "0.0.3",
     "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.3/nft-utils-0.0.3.jar"
   }]
+},{
+  "id": "nft-fastq",
+  "latest": "0.0.1",
+  "url": "https://github.com/lukfor/nft-fastq",
+  "github": "lukfor/nft-fastq",
+  "description": "Provides support for FASTQ files.",
+  "author": "Lukas Forer",
+  "keywords": [],
+  "releases": [{
+    "version": "0.0.1",
+    "url": "https://github.com/lukfor/nft-fastq/releases/download/v0.0.1/nft-fastq-0.0.1-all.jar"
+  }]
 }
 ]
