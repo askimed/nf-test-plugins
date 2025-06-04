@@ -130,5 +130,17 @@
     "version": "0.1.0",
     "url": "https://github.com/nictru/nft-anndata/releases/download/v0.1.0/nft-anndata-0.1.0.jar"
   }]
+}, {
+  "id": "nft-tiff",
+  "latest": "0.1.0",
+  "url": "https://github.com/nf-core/nft-tiff",
+  "github": "nf-core/nft-tiff",
+  "description": "Provides support for TIFF files.",
+  "author": "nf-core",
+  "keywords": [],
+  "releases": [{
+    "version": "0.1.0",
+    "url": "https://github.com/nf-core/nft-tiff/releases/download/v0.1.0/nft-tiff-0.1.0.jar"
+  }]
 }
 ]
