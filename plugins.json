@@ -90,7 +90,7 @@
   }]
 },{
   "id": "nft-utils",
-  "latest": "0.0.6",
+  "latest": "0.0.7",
   "url": "https://github.com/nf-core/nft-utils",
   "github": "nf-core/nft-utils",
   "description": "nf-test utility functions for Nextflow pipelines.",
@@ -114,6 +114,9 @@
   },{
     "version": "0.0.6",
     "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.6/nft-utils-0.0.6.jar"
+  },{
+    "version": "0.0.7",
+    "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.7/nft-utils-0.0.7.jar"
   }]
 },{
   "id": "nft-fastq",
