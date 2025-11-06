@@ -144,7 +144,7 @@
   }]
 }, {
   "id": "nft-tiff",
-  "latest": "0.1.0",.
+  "latest": "0.1.0",
   "url": "https://github.com/nf-core/nft-tiff",
   "github": "nf-core/nft-tiff",
   "description": "Provides support for TIFF files.",
@@ -156,7 +156,7 @@
   }]
 }, {
   "id": "nft-parquet",
-  "latest": "0.0.1",.
+  "latest": "0.0.1",
   "url": "https://github.com/incsteps/nft-parquet",
   "github": "incsteps/nft-parquet",
   "description": "Provides support for Parquet files.",
