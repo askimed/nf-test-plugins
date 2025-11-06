@@ -144,7 +144,7 @@
   }]
 }, {
   "id": "nft-tiff",
-  "latest": "0.1.0",
+  "latest": "0.1.0",.
   "url": "https://github.com/nf-core/nft-tiff",
   "github": "nf-core/nft-tiff",
   "description": "Provides support for TIFF files.",
@@ -153,6 +153,18 @@
   "releases": [{
     "version": "0.1.0",
     "url": "https://github.com/nf-core/nft-tiff/releases/download/v0.1.0/nft-tiff-0.1.0.jar"
+  }]
+}, {
+  "id": "nft-parquet",
+  "latest": "0.0.1",.
+  "url": "https://github.com/incsteps/nft-parquet",
+  "github": "incsteps/nft-parquet",
+  "description": "Provides support for Parquet files.",
+  "author": "Jorge Aguilera",
+  "keywords": ["parquet"],
+  "releases": [{
+    "version": "0.0.1",
+    "url": "https://github.com/incsteps/nft-parquet/releases/download/0.0.1/nft-parquet-0.0.1.jar"
   }]
 }
 ]
