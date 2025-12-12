@@ -117,6 +117,9 @@
   },{
     "version": "0.0.7",
     "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.7/nft-utils-0.0.7.jar"
+  },{
+    "version": "0.0.8",
+    "url": "https://github.com/nf-core/nft-utils/releases/download/0.0.8/nft-utils-0.0.8.jar"
   }]
 },{
   "id": "nft-fastq",
