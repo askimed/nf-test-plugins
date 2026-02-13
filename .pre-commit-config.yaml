@@ -11,3 +11,5 @@ repos:
       - id: prettier
         types: [json]
         name: Format JSON with Prettier
+        additional_dependencies:
+          - prettier@3.8.1
