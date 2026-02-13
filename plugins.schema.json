@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "latest",
+      "url",
+      "github",
+      "description",
+      "author",
+      "keywords",
+      "releases"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Unique identifier for the plugin"
+      },
+      "latest": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Latest version of the plugin",
+        "pattern": "^\\d+\\.\\d+\\.\\d+$"
+      },
+      "url": {
+        "type": "string",
+        "minLength": 1,
+        "format": "uri",
+        "description": "URL to the plugin repository"
+      },
+      "github": {
+        "type": "string",
+        "minLength": 1,
+        "description": "GitHub repository in format owner/repo",
+        "pattern": "^[^/]+/[^/]+$"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Description of the plugin"
+      },
+      "author": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Author of the plugin"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Keywords associated with the plugin"
+      },
+      "releases": {
+        "type": "array",
+        "additionalProperties": false,
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["version", "url"],
+          "properties": {
+            "version": {
+              "type": "string",
+              "description": "Version of the release",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Download URL for the release"
+            }
+          }
+        }
+      }
+    }
+  }
+}
