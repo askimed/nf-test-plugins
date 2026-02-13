@@ -17,29 +17,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Prettier
-        run: npm install -g prettier
-
-      - name: Lint JSON files
-        run: |
-          echo "Linting JSON files..."
-          find . -name "*.json" -not -path "./node_modules/*" -not -path "./.git/*" | while read file; do
-            echo "Checking $file"
-            if ! jq empty "$file" 2>/dev/null; then
-              echo "❌ Invalid JSON in $file"
-              exit 1
-            else
-              echo "✅ Valid JSON: $file"
-            fi
-          done
-          echo "All JSON files are valid!"
-
-      - name: Check JSON formatting with Prettier
-        run: |
-          echo "Checking JSON formatting..."
-          prettier --check "**/*.json" "!node_modules/**"
+      - uses: j178/prek-action@v1
