@@ -3,7 +3,16 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "latest", "url", "github", "description", "author", "keywords", "releases"],
+    "required": [
+      "id",
+      "latest",
+      "url",
+      "github",
+      "description",
+      "author",
+      "keywords",
+      "releases"
+    ],
     "properties": {
       "id": {
         "type": "string",
