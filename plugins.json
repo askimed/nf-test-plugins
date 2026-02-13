@@ -163,7 +163,7 @@
   },
   {
     "id": "nft-fastq",
-    "latest": "0.0.1",
+    "latest": "0.1.0",
     "url": "https://github.com/lukfor/nft-fastq",
     "github": "lukfor/nft-fastq",
     "description": "Provides support for FASTQ files.",
@@ -173,6 +173,10 @@
       {
         "version": "0.0.1",
         "url": "https://github.com/lukfor/nft-fastq/releases/download/v0.0.1/nft-fastq-0.0.1-all.jar"
+      },
+      {
+        "version": "0.1.0",
+        "url": "https://github.com/lukfor/nft-fastq/releases/download/v0.1.0/nft-fastq-0.1.0-all.jar"
       }
     ]
   },
