@@ -196,6 +196,10 @@
       {
         "version": "0.3.3",
         "url": "https://github.com/nictru/nft-anndata/releases/download/v0.3.3/nft-anndata-0.3.3.jar"
+      },
+      {
+        "version": "0.3.4",
+        "url": "https://github.com/nictru/nft-anndata/releases/download/v0.3.4/nft-anndata-0.3.4.jar"
       }
     ]
   },
