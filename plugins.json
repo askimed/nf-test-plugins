@@ -187,10 +187,7 @@
     "github": "nictru/nft-anndata",
     "description": "Provides support for AnnData (h5ad) files.",
     "author": "Nico Trummer",
-    "keywords": [
-      "anndata",
-      "h5ad"
-    ],
+    "keywords": ["anndata", "h5ad"],
     "releases": [
       {
         "version": "0.1.0",
