@@ -182,12 +182,15 @@
   },
   {
     "id": "nft-anndata",
-    "latest": "0.4.0",
+    "latest": "0.4.1",
     "url": "https://github.com/nictru/nft-anndata",
     "github": "nictru/nft-anndata",
     "description": "Provides support for AnnData (h5ad) files.",
     "author": "Nico Trummer",
-    "keywords": [],
+    "keywords": [
+      "anndata",
+      "h5ad"
+    ],
     "releases": [
       {
         "version": "0.1.0",
@@ -208,6 +211,10 @@
       {
         "version": "0.4.0",
         "url": "https://github.com/nictru/nft-anndata/releases/download/v0.4.0/nft-anndata-0.4.0.jar"
+      },
+      {
+        "version": "0.4.1",
+        "url": "https://github.com/nictru/nft-anndata/releases/download/v0.4.1/nft-anndata-0.4.1.jar"
       }
     ]
   },
