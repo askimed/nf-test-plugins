@@ -47,7 +47,7 @@
   },
   {
     "id": "nft-bam",
-    "latest": "0.6.0",
+    "latest": "0.6.1",
     "url": "https://nvnieuwk.github.io/nft-bam",
     "github": "nvnieuwk/nft-bam",
     "description": "Provides some helper functionality for handling SAM/BAM/CRAM files during tests",
@@ -81,6 +81,10 @@
       {
         "version": "0.6.0",
         "url": "https://github.com/nvnieuwk/nft-bam/releases/download/0.6.0/nft-bam-0.6.0.jar"
+      },
+      {
+        "version": "0.6.1",
+        "url": "https://github.com/nvnieuwk/nft-bam/releases/download/0.6.1/nft-bam-0.6.1.jar"
       }
     ]
   },
