@@ -210,7 +210,7 @@
   },
   {
     "id": "nft-anndata",
-    "latest": "0.5.2",
+    "latest": "0.5.3",
     "url": "https://github.com/nictru/nft-anndata",
     "github": "nictru/nft-anndata",
     "description": "Provides support for AnnData (.h5ad and .zarr) files.",
@@ -252,6 +252,10 @@
       {
         "version": "0.5.2",
         "url": "https://github.com/nictru/nft-anndata/releases/download/v0.5.2/nft-anndata-0.5.2.jar"
+      },
+      {
+        "version": "0.5.3",
+        "url": "https://github.com/nictru/nft-anndata/releases/download/v0.5.3/nft-anndata-0.5.3.jar"
       }
     ]
   },
